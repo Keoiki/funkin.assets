@@ -101,6 +101,12 @@
                             <item text="16" />
                         </data>
                     </dropdown>
+                    <spacer />
+                    <checkbox text="Gradual BPM Shift?" id="inputGradualBPMShift" tooltip="Check this box if the BPM of the currently selected time change is gradually changing." />
+                    <label id="labelGradualBPM" text="Target BPM:" verticalAlign="center" />
+                    <number-stepper id="inputGradualBPM" pos="100" step="1" min="10" max="500" precision="3" horizontalAlign="right" width="160" tooltip="Adjust the BPM of the song, which helps align the grid and character animations to the music." />
+                    <label id="labelGradualTimeStamp" text="End Time:" verticalAlign="center" />
+                    <number-stepper id="inputGradualTimeStamp" pos="100" step="150" precision="4" horizontalAlign="right" width="160" tooltip="Adjust the timestamp of when the currently selected time change will start occurring in the song." />
                 </grid>
             </frame>
             <button allowFocus="false" id="addTimeChange" text="Add Time Change" tooltip="Add a time change after the currently selected time change." />
